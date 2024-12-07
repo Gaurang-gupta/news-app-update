@@ -1,4 +1,4 @@
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Card = ({ image, title, desc, author, source, published_at }: {
   image: string,
