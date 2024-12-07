@@ -5,7 +5,7 @@ function ReadMore() {
   const queryParams = new URLSearchParams(location.search);
   const queryObject = Object.fromEntries(queryParams.entries());
 
-  const modifyDesc = (desc, length) => {
+  const modifyDesc = (desc: string, length: number) => {
     const start = String(desc)
     let output = ""
     for(let i=0;i<Math.min(length, start.length);i++){

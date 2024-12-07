@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import { RxHamburgerMenu } from "react-icons/rx";
+// import { useState } from 'react'
+// import { RxHamburgerMenu } from "react-icons/rx";
 import "./Navbar.css"
 import { Link } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 
-function Navbar({setClicked}) {
+function Navbar() {
     // const [open, setOpen] = useState(false);
-    const open = false
-    const urlParams = new URLSearchParams(window?.location?.search);
-    const myParam = urlParams?.get('target');
+    // const open = false
+    // const urlParams = new URLSearchParams(window?.location?.search);
+    // const myParam = urlParams?.get('target');
 
   return (
     <nav className='flex md:justify-between pt-7 xs:px-7 md:px-14 items-center xs:justify-left'>

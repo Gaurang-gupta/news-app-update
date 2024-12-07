@@ -1,7 +1,14 @@
 import { Link, useSearchParams } from 'react-router-dom';
 
-const Card = ({ image, title, desc, author, source, published_at }) => {
-  const [searchParams, setSearchParams] = useSearchParams();
+const Card = ({ image, title, desc, author, source, published_at }: {
+  image: string,
+  title: string,
+  source: string,
+  desc: string,
+  author: string,
+  published_at: string,
+}) => {
+  // const [searchParams, setSearchParams] = useSearchParams();
 
   const obj = { 
     image: image,
@@ -17,7 +24,7 @@ const Card = ({ image, title, desc, author, source, published_at }) => {
   }
 
 
-  const modifyDesc = (desc, length) => {
+  const modifyDesc = (desc: string, length: number) => {
     const start = String(desc)
     let output = ""
     for(let i=0;i<Math.min(length, start.length);i++){

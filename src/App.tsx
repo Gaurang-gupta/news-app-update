@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import { ReactElement } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar';
-function App({ children }) {
-  const [clicked, setClicked] = useState("")
+function App({ children }: {children: ReactElement}) {
   return (
     <div className="bg-gray-100">
-      <Navbar clicked={clicked} setClicked={setClicked}/>
+      <Navbar />
       { children }
     </div>
   )
